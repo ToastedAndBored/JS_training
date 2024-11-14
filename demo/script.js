@@ -90,3 +90,53 @@ const obj = {
 }
 
 console.log(obj)
+
+const obj1 = { 
+  name: 'Sanya',
+  idk:{
+    name: 'Sssssanya',
+    age: 30
+  }
+}
+const obj2 = obj1
+
+console.log(obj1 === obj2)
+
+
+obj2.name = 'Max'
+
+console.log(obj2)
+
+const ObjEquel = (ob1, ob2) =>{
+  const keys1 = Object.keys(ob1)
+  const keys2 = Object.keys(ob2)
+
+  for (const key in ob1) {
+    const value1 = ob1[key]
+    const value2 = ob2[key]
+    const areValuesObj = 
+      typeof value1 === 'object' && typeof value2 === 'object'
+
+    if (areValuesObj){
+      return ObjEquel(value1,value2)
+    }
+
+    if (value1 !== value2){
+      return false
+    }
+  }
+  return true
+}
+
+console.log(ObjEquel(obj1,obj2))
+
+
+const obj3 = {name: 'Yar'}
+let obj4 ={}
+Object.assign(obj4,obj3)
+
+console.log(obj4)
+
+obj4 = {...obj1}
+
+console.log(obj4)
