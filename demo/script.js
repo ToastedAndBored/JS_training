@@ -217,3 +217,44 @@ const exemp = '100zfsdfsfsfs'
 
 console.log(parseInt(exemp))
 
+
+const string = 'sdfghjkl'
+
+console.log(string[string.length - 1])
+console.log(string.at(-1))
+
+console.log(string.toLowerCase())
+
+console.log("       adffafaf ".trim())
+
+console.log(string.indexOf("f"))
+console.log(string.includes("f"))
+
+console.log(string.includes('s', 1)) //false
+
+console.log(string.substring(1,0))
+console.log(string.slice(2,-2))
+
+console.log(string.repeat(3))
+
+console.log(string.replace("s","a"))
+
+const str = '+8 800 335 35 35'
+
+console.log(str.replace(/\d/g, "#")) //regular exp for all nums in string
+
+console.log(("sfafaf").split("f"))
+
+const val = prompt('Имечко:')
+
+const clearVal = val.trim().toLowerCase()
+
+if (clearVal.length === 0) {
+  alert('Нет букоф')
+}
+
+if (clearVal.includes('админ')) {
+  alert('АДМИН ЗДЕСЬ ТОЛЬКО Я')
+}
+
+console.log(clearVal)
