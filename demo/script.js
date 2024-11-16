@@ -173,20 +173,47 @@ const user = {
 user.ThisExemp()
 user.ArrowThis()
 
-const culc = {
-  read() {
-    this.a = +prompt()
-    this.b = +prompt()
-  },
-  sum() {
-    return this.a + this.b
-  },
-  mul() {
-    return this.a * this.b
-  }
-}
+// const culc = {
+//   read() {
+//     this.a = +prompt()
+//     this.b = +prompt()
+//   },
+//   sum() {
+//     return this.a + this.b
+//   },
+//   mul() {
+//     return this.a * this.b
+//   }
+// }
 
 
-culc.read()
-console.log(culc.sum())
-console.log(culc.mul())
+// culc.read()
+// console.log(culc.sum())
+// console.log(culc.mul())
+
+
+const price = 99.999999
+
+console.log(price.toFixed(1))
+console.log((6.63).toFixed())
+
+console.log((100.213).toPrecision(3))
+
+console.log((100).toString(2))
+
+console.log(
+  Math.random()
+)
+console.log(Math.abs(-1))
+console.log(Math.pow(5, 2))
+console.log(Math.min(1,2,4,-1))
+
+const nums = [1,2,3,5,76]
+console.log(Math.max(...nums))
+
+console.log(Math.trunc(3.45))
+
+const exemp = '100zfsdfsfsfs'
+
+console.log(parseInt(exemp))
+
