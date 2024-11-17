@@ -296,4 +296,84 @@ const arr4 = [...arr1, ...arr2]
 
 console.log(arr4)
 
-console.log(Array.isArray(arr4)
+console.log(Array.isArray(arr4))
+
+arr4.forEach( (el) => {
+  console.log(el)
+})
+
+console.log(arr4.indexOf(1,1)
+)
+
+const arr5 = [
+  {
+    name: 'YA'
+  },
+]
+console.log(arr5[0].name)
+console.log(
+  arr5.findIndex( (element, i) =>{
+    if(element.name === "YA"){
+      return true
+    }
+  }
+  )
+)
+
+
+console.log(
+  arr5.findIndex(( {name} ) => name === 'YA')
+)
+
+console.log(arr5.includes({name})
+)
+
+console.log(
+  arr5.some( (el) => el.name === 'YA'
+  )
+)
+
+const arr6 = [
+  {
+    age: 30
+  },
+  {
+    age:20
+  },
+  {
+    age:19
+  },
+  {
+    age:19
+  }
+]
+
+console.log(
+  arr6.every( (el) => el.age >= 18)
+)
+
+console.log(
+  arr6.find( (el) => el.age === 19)
+)
+
+console.log(
+  arr6.filter( (el) => el.age === 19)
+)
+
+const aged = arr6.map( (el) => `возраст: ${el.age}`)
+
+console.log(aged)
+
+const ageSum = arr6.reduce((sum, el) => {
+  return sum+ el.age
+}, 0)
+
+console.log(ageSum)
+
+const notReversedArr6 = [...arr6].reverse() 
+const reversedArr6 = arr6.reverse() // arr6 got mutated
+
+const sortedArr6 = [...arr6].sort((a,b) => a.age - b.age)
+
+console.log(sortedArr6)
+
