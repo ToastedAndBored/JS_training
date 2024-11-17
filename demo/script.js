@@ -258,3 +258,42 @@ if (clearVal.includes('админ')) {
 }
 
 console.log(clearVal)
+
+const arr = [1,23,4,
+  () => {console.log('SSSSSS')}
+]
+
+console.log(arr[1])
+
+arr[3]()
+
+arr[1] = 43
+
+arr[4] = 90
+
+
+console.log(arr.at(-1))
+
+arr.push("6")
+
+arr.unshift('9')
+console.log(...arr)
+console.log(arr.pop())
+console.log(arr.shift())
+
+console.log(arr.join(", ").split(", "))
+
+const arr1 = [1,2,3,4]
+const arr2 =[...arr1]
+
+console.log(arr2)
+
+const arr3 = arr2.slice(-1)
+
+console.log(arr3)
+
+const arr4 = [...arr1, ...arr2]
+
+console.log(arr4)
+
+console.log(Array.isArray(arr4)
