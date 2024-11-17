@@ -192,146 +192,146 @@ user.ArrowThis()
 // console.log(culc.mul())
 
 
-const price = 99.999999
+// const price = 99.999999
 
-console.log(price.toFixed(1))
-console.log((6.63).toFixed())
+// console.log(price.toFixed(1))
+// console.log((6.63).toFixed())
 
-console.log((100.213).toPrecision(3))
+// console.log((100.213).toPrecision(3))
 
-console.log((100).toString(2))
+// console.log((100).toString(2))
 
-console.log(
-  Math.random()
-)
-console.log(Math.abs(-1))
-console.log(Math.pow(5, 2))
-console.log(Math.min(1,2,4,-1))
+// console.log(
+//   Math.random()
+// )
+// console.log(Math.abs(-1))
+// console.log(Math.pow(5, 2))
+// console.log(Math.min(1,2,4,-1))
 
-const nums = [1,2,3,5,76]
-console.log(Math.max(...nums))
+// const nums = [1,2,3,5,76]
+// console.log(Math.max(...nums))
 
-console.log(Math.trunc(3.45))
+// console.log(Math.trunc(3.45))
 
-const exemp = '100zfsdfsfsfs'
+// const exemp = '100zfsdfsfsfs'
 
-console.log(parseInt(exemp))
-
-
-const string = 'sdfghjkl'
-
-console.log(string[string.length - 1])
-console.log(string.at(-1))
-
-console.log(string.toLowerCase())
-
-console.log("       adffafaf ".trim())
-
-console.log(string.indexOf("f"))
-console.log(string.includes("f"))
-
-console.log(string.includes('s', 1)) //false
-
-console.log(string.substring(1,0))
-console.log(string.slice(2,-2))
-
-console.log(string.repeat(3))
-
-console.log(string.replace("s","a"))
-
-const str = '+8 800 335 35 35'
-
-console.log(str.replace(/\d/g, "#")) //regular exp for all nums in string
-
-console.log(("sfafaf").split("f"))
-
-const val = prompt('Имечко:')
-
-const clearVal = val.trim().toLowerCase()
-
-if (clearVal.length === 0) {
-  alert('Нет букоф')
-}
-
-if (clearVal.includes('админ')) {
-  alert('АДМИН ЗДЕСЬ ТОЛЬКО Я')
-}
-
-console.log(clearVal)
-
-const arr = [1,23,4,
-  () => {console.log('SSSSSS')}
-]
-
-console.log(arr[1])
-
-arr[3]()
-
-arr[1] = 43
-
-arr[4] = 90
+// console.log(parseInt(exemp))
 
 
-console.log(arr.at(-1))
+// const string = 'sdfghjkl'
 
-arr.push("6")
+// console.log(string[string.length - 1])
+// console.log(string.at(-1))
 
-arr.unshift('9')
-console.log(...arr)
-console.log(arr.pop())
-console.log(arr.shift())
+// console.log(string.toLowerCase())
 
-console.log(arr.join(", ").split(", "))
+// console.log("       adffafaf ".trim())
 
-const arr1 = [1,2,3,4]
-const arr2 =[...arr1]
+// console.log(string.indexOf("f"))
+// console.log(string.includes("f"))
 
-console.log(arr2)
+// console.log(string.includes('s', 1)) //false
 
-const arr3 = arr2.slice(-1)
+// console.log(string.substring(1,0))
+// console.log(string.slice(2,-2))
 
-console.log(arr3)
+// console.log(string.repeat(3))
 
-const arr4 = [...arr1, ...arr2]
+// console.log(string.replace("s","a"))
 
-console.log(arr4)
+// const str = '+8 800 335 35 35'
 
-console.log(Array.isArray(arr4))
+// console.log(str.replace(/\d/g, "#")) //regular exp for all nums in string
 
-arr4.forEach( (el) => {
-  console.log(el)
-})
+// console.log(("sfafaf").split("f"))
 
-console.log(arr4.indexOf(1,1)
-)
+// const val = prompt('Имечко:')
 
-const arr5 = [
-  {
-    name: 'YA'
-  },
-]
-console.log(arr5[0].name)
-console.log(
-  arr5.findIndex( (element, i) =>{
-    if(element.name === "YA"){
-      return true
-    }
-  }
-  )
-)
+// const clearVal = val.trim().toLowerCase()
+
+// if (clearVal.length === 0) {
+//   alert('Нет букоф')
+// }
+
+// if (clearVal.includes('админ')) {
+//   alert('АДМИН ЗДЕСЬ ТОЛЬКО Я')
+// }
+
+// console.log(clearVal)
+
+// const arr = [1,23,4,
+//   () => {console.log('SSSSSS')}
+// ]
+
+// console.log(arr[1])
+
+// arr[3]()
+
+// arr[1] = 43
+
+// arr[4] = 90
 
 
-console.log(
-  arr5.findIndex(( {name} ) => name === 'YA')
-)
+// console.log(arr.at(-1))
 
-console.log(arr5.includes({name})
-)
+// arr.push("6")
 
-console.log(
-  arr5.some( (el) => el.name === 'YA'
-  )
-)
+// arr.unshift('9')
+// console.log(...arr)
+// console.log(arr.pop())
+// console.log(arr.shift())
+
+// console.log(arr.join(", ").split(", "))
+
+// const arr1 = [1,2,3,4]
+// const arr2 =[...arr1]
+
+// console.log(arr2)
+
+// const arr3 = arr2.slice(-1)
+
+// console.log(arr3)
+
+// const arr4 = [...arr1, ...arr2]
+
+// console.log(arr4)
+
+// console.log(Array.isArray(arr4))
+
+// arr4.forEach( (el) => {
+//   console.log(el)
+// })
+
+// console.log(arr4.indexOf(1,1)
+// )
+
+// const arr5 = [
+//   {
+//     name: 'YA'
+//   },
+// ]
+// console.log(arr5[0].name)
+// console.log(
+//   arr5.findIndex( (element, i) =>{
+//     if(element.name === "YA"){
+//       return true
+//     }
+//   }
+//   )
+// )
+
+
+// console.log(
+//   arr5.findIndex(( {name} ) => name === 'YA')
+// )
+
+// console.log(arr5.includes({name})
+// )
+
+// console.log(
+//   arr5.some( (el) => el.name === 'YA'
+//   )
+// )
 
 const arr6 = [
   {
@@ -376,4 +376,36 @@ const reversedArr6 = arr6.reverse() // arr6 got mutated
 const sortedArr6 = [...arr6].sort((a,b) => a.age - b.age)
 
 console.log(sortedArr6)
+
+
+
+const obj = {
+  name: '21e1dsf',
+  age:28
+}
+const keys = Object.keys(obj)
+const vals = Object.values(obj)
+const entr = Object.entries(obj)
+const frEntr = Object.fromEntries(entr)
+
+console.log(keys,vals,entr)
+console.log(frEntr)
+
+const data = new Map()
+
+data.set(1, 23)
+data.set(2, 13)
+
+console.log(data.get(1))
+console.log(data.has(2))
+console.log(data.size)
+
+data.delete(1)
+data.clear()
+
+const data1 = new Set([1,1,1,1,1,1,2,3,4])
+data1.add(6)
+console.log(data1)
+
+
 
