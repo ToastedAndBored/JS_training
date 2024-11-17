@@ -407,5 +407,15 @@ const data1 = new Set([1,1,1,1,1,1,2,3,4])
 data1.add(6)
 console.log(data1)
 
+const json = {
+  name: 'afsgerghs',
+  age: 28,
+  city: 'dfghjkl;'
+}
 
+console.log(JSON.stringify(json))
+
+const a = JSON.stringify(json)
+
+console.log(JSON.parse(a))
 
