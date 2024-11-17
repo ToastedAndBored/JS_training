@@ -419,3 +419,48 @@ const a = JSON.stringify(json)
 
 console.log(JSON.parse(a))
 
+class User {
+  planet = 'Earth'
+  static static = "fsfsfs" 
+
+  constructor(name, age) {
+    this.name = name
+    this.age = age
+  }
+
+  logAge(){
+    console.log(this.age)
+  }
+  set city(value){
+    this._city = value
+  }
+  get city(){
+    return this._city
+  }
+
+  #secreeeeeeet(){
+    //...
+  }
+}
+
+const user1 = new User("OLEG", 29)
+
+user1.logAge()
+
+user1.city = "fewfwwg"
+
+class Dev extends User {
+ constructor(name, age,experience) {
+   super(name,age)
+   this.experience = experience
+ }
+
+  writeCode(){
+    console.log("Пишууууууууу....")
+  }
+
+}
+
+const user2 = new Dev("ANTON",99.999999,0)
+
+user2.writeCode()
