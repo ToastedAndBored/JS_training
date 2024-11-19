@@ -465,31 +465,44 @@ const user2 = new Dev("ANTON",99.999999,0)
 
 user2.writeCode()
 
-function bi() {
-  console.log('ы')
-}
+// function bi() {
+//   console.log('ы')
+// }
 
-setTimeout(bi, 200)
+// setTimeout(bi, 200)
 
-const logHello = (name,age) => {
-  console.log(`Hello ${name}, you're ${age} years old`)
-}
+// const logHello = (name,age) => {
+//   console.log(`Hello ${name}, you're ${age} years old`)
+// }
 
-const idTime = setTimeout(logHello, 2000,"ЫNOKENTI", 200)
+// const idTime = setTimeout(logHello, 2000,"ЫNOKENTI", 200)
 
-clearTimeout(idTime)
+// clearTimeout(idTime)
 
-const idInter = setInterval(logHello, 200,"LOX",0)
+// const idInter = setInterval(logHello, 200,"LOX",0)
 
-setTimeout(() => {
-  clearInterval(idInter)
-}, 2000)
+// setTimeout(() => {
+//   clearInterval(idInter)
+// }, 2000)
 
-setTimeout(function log() {
-  alert("alert)
-  console.log(bi())
+// setTimeout(function log() {
+//   alert("alert)
+//   console.log(bi())
 
-  setTimeout(log,1000)
+//   setTimeout(log,1000)
  
-}, 2000)
+// }, 2000)
+const bi = "s"
+try {
+
+  if (bi === "s") {
+    throw new Error("ТАК НАДО")
+  }
+  bi.forEach(element => {
+    console.log(element)
+  })
+} catch (error) {
+  console.log("Ошибка: ",error.name, error.message, error.stack)
+}
+
 
