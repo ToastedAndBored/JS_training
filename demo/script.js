@@ -492,17 +492,56 @@ user2.writeCode()
 //   setTimeout(log,1000)
  
 // }, 2000)
-const bi = "s"
-try {
 
-  if (bi === "s") {
-    throw new Error("ТАК НАДО")
-  }
-  bi.forEach(element => {
-    console.log(element)
-  })
-} catch (error) {
-  console.log("Ошибка: ",error.name, error.message, error.stack)
+const wait = (ms,message) =>{
+  setTimeout(message,ms)
 }
 
+wait(5000, () => {console.log(3)})
 
+
+// const bi = "s"
+// try {
+
+//   if (bi === "s") {
+//     throw new Error("ТАК НАДО")
+//   }
+//   bi.forEach(element => {
+//     console.log(element)
+//   })
+// } catch (error) {
+//   console.log("Ошибка: ",error.name, error.message, error.stack)
+// }
+
+const promise = new Promise((yes,no) => {
+  console.log("pending...")
+
+  setTimeout(() => {
+    if(Math.random > 0,5){
+      yes('YES')
+    } else{
+      no("NO")
+    }
+  }, 3000)
+})
+
+promise.then((suc) => {
+  console.log(`NIIIIIICE `,suc)
+}).catch((nosuc) => {
+  console.log("NOOOOOOOOO", nosuc)
+}).finally(() => {
+  console.log("HRY")
+})
+
+async function aadas() {
+  
+}
+
+const makeRequest = async (url, suc) => {
+  return new Promise((yes) => {
+    yes("ПОЛУЧИЛОСЬ ")
+  })
+}
+
+const seller = await makeRequest(`ffsfdsf/`)
+const firstProductId = seller.productIds[0]
