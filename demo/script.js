@@ -464,3 +464,32 @@ class Dev extends User {
 const user2 = new Dev("ANTON",99.999999,0)
 
 user2.writeCode()
+
+function bi() {
+  console.log('ы')
+}
+
+setTimeout(bi, 200)
+
+const logHello = (name,age) => {
+  console.log(`Hello ${name}, you're ${age} years old`)
+}
+
+const idTime = setTimeout(logHello, 2000,"ЫNOKENTI", 200)
+
+clearTimeout(idTime)
+
+const idInter = setInterval(logHello, 200,"LOX",0)
+
+setTimeout(() => {
+  clearInterval(idInter)
+}, 2000)
+
+setTimeout(function log() {
+  alert("alert)
+  console.log(bi())
+
+  setTimeout(log,1000)
+ 
+}, 2000)
+
