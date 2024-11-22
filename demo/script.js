@@ -513,35 +513,56 @@ wait(5000, () => {console.log(3)})
 //   console.log("Ошибка: ",error.name, error.message, error.stack)
 // }
 
-const promise = new Promise((yes,no) => {
-  console.log("pending...")
+// const promise = new Promise((yes,no) => {
+//   console.log("pending...")
 
-  setTimeout(() => {
-    if(Math.random > 0,5){
-      yes('YES')
-    } else{
-      no("NO")
-    }
-  }, 3000)
-})
+//   setTimeout(() => {
+//     if(Math.random > 0,5){
+//       yes('YES')
+//     } else{
+//       no("NO")
+//     }
+//   }, 3000)
+// })
 
-promise.then((suc) => {
-  console.log(`NIIIIIICE `,suc)
-}).catch((nosuc) => {
-  console.log("NOOOOOOOOO", nosuc)
-}).finally(() => {
-  console.log("HRY")
-})
+// promise.then((suc) => {
+//   console.log(`NIIIIIICE `,suc)
+// }).catch((nosuc) => {
+//   console.log("NOOOOOOOOO", nosuc)
+// }).finally(() => {
+//   console.log("HRY")
+// })
 
-async function aadas() {
+// async function aadas() {
   
-}
+// }
 
-const makeRequest = async (url, suc) => {
-  return new Promise((yes) => {
-    yes("ПОЛУЧИЛОСЬ ")
-  })
-}
+// const makeRequest = async (url, suc) => {
+//   return new Promise((yes) => {
+//     yes("ПОЛУЧИЛОСЬ ")
+//   })
+// }
 
-const seller = await makeRequest(`ffsfdsf/`)
-const firstProductId = seller.productIds[0]
+// const seller = await makeRequest(`ffsfdsf/`)
+// const firstProductId = seller.productIds[0]
+
+console.log(document)
+console.log(document.body.parentElement)
+
+console.log(document.body.previousElementSibling)
+
+console.log(document.body.children)
+
+Array.from(document.body.children).forEach((element) => {
+  console.log(element)
+})
+
+const detey = [...document.body.children]
+console.log(detey)
+
+const detDiv = document.body.children[0]
+
+console.log(detDiv.firstElementChild)
+console.log(detDiv.nextSibling)
+console.log(detDiv.nextElementSibling)
+console.log(detDiv.childNodes)
