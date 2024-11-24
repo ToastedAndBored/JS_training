@@ -546,23 +546,79 @@ wait(5000, () => {console.log(3)})
 // const seller = await makeRequest(`ffsfdsf/`)
 // const firstProductId = seller.productIds[0]
 
-console.log(document)
-console.log(document.body.parentElement)
+// console.log(document)
+// console.log(document.body.parentElement)
 
-console.log(document.body.previousElementSibling)
+// console.log(document.body.previousElementSibling)
 
-console.log(document.body.children)
+// console.log(document.body.children)
 
-Array.from(document.body.children).forEach((element) => {
-  console.log(element)
-})
+// Array.from(document.body.children).forEach((element) => {
+//   console.log(element)
+// })
 
-const detey = [...document.body.children]
-console.log(detey)
+// const detey = [...document.body.children]
+// console.log(detey)
 
-const detDiv = document.body.children[0]
+// const detDiv = document.body.children[0]
 
-console.log(detDiv.firstElementChild)
-console.log(detDiv.nextSibling)
-console.log(detDiv.nextElementSibling)
-console.log(detDiv.childNodes)
+// console.log(detDiv.firstElementChild)
+// console.log(detDiv.nextSibling)
+// console.log(detDiv.nextElementSibling)
+// console.log(detDiv.childNodes)
+
+const but = document.getElementById("button")
+
+console.log(but)
+
+const box = document.querySelector(".box1")
+console.log(box)
+
+const boxList = document.querySelectorAll(".box1, .box2, .box3")
+console.log(boxList)
+
+console.log(document.querySelector('.box3').closest('.box1'))
+
+// console.dir(but)
+
+console.log(but.getAttribute("id"))
+
+but.setAttribute("cfghjv","1")
+
+console.log(but.getAttribute("cfghjv"))
+
+but.removeAttribute('cfghjv')
+
+console.log(but.hasAttribute('cfghjv'))
+
+const choJS = document.querySelector('[data-js-cho]')
+console.log(choJS)
+
+const choParse = JSON.parse(
+  choJS.getAttribute("data-js-cho")
+)
+console.log(choParse)
+
+console.log(but.style)
+
+const box1 = document.querySelector('.box1')
+
+box1.style.cssText += `
+  height: 40px;
+  width: 40px;
+  border: 40px solid blue;
+`
+
+console.log(getComputedStyle(box1).width)
+console.log(getComputedStyle(box1,'::after').content)
+
+box1.classList.add('dcfvghj')
+box1.classList.remove('dcfvghj')
+
+const tru = true
+
+box1.classList.toggle('red', tru)
+
+console.log(box1.classList.contains('red'))
+
+box1.style.setProperty('--aaaa', 'green')
