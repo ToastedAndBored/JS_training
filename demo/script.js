@@ -683,3 +683,63 @@ setTimeout(() => {
     behavior: "smooth"
   })
 }, 2000)
+
+const boxElement = document.querySelector('.box')
+
+const p1 = document.querySelector('.p1')
+p1.textContent += 'fwfgfs'
+
+console.log(boxElement.textContent)
+
+boxElement.innerHTML += ` 
+  xcvgbhnjk
+  <p>afdsffa</p>
+`
+
+console.log(boxElement.innerHTML)
+
+console.log(boxElement.outerHTML)
+
+const p4 = document.createElement('p')
+
+p4.textContent = "Forth one"
+p4.classList.add('p4')
+
+boxElement.append(p4)
+boxElement.prepend(p4)
+
+boxElement.before(p4)
+boxElement.after(p4)
+
+p.replaceWith(p4) //Каждая следующая инструкция перемещала p4 по DOM-дереву на странице
+                  //а не создавала новые элементы по запросу
+//А вот функция ниже из-за того что постоянно создаёт новый элемент такой проблемы не имеет
+const getNewP = (cl) =>{
+  const newP = document.createElement('p')
+  
+  newP.classList.add(`${cl}`)
+
+  newP.textContent = "Что бы то ни было"
+
+  return newP
+}
+
+boxElement.append(getNewP('first'))
+boxElement.prepend(getNewP('second'))
+//В аргументы этих методы можно добавлять несколько элементов 
+
+const newTag = '<p>SMTH</p>'
+
+boxElement.insertAdjacentHTML('afterbegin', newTag)//Вставка строк с разметкой
+                                                   //лучше погуглить методы
+
+p.remove()
+
+const boxClone = boxElement.cloneNode(true)
+
+boxElement.after(boxClone)
+
+
+
+
+
