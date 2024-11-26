@@ -8,3 +8,9 @@
 
   color: var(--aaaa);
 }
+
+.pr{
+  width: 100px;
+  height: 100px;
+  overflow: auto;
+}

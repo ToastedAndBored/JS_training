@@ -622,3 +622,64 @@ box1.classList.toggle('red', tru)
 console.log(box1.classList.contains('red'))
 
 box1.style.setProperty('--aaaa', 'green')
+
+console.log(box1.offsetWidth)
+console.log(box1.offsetHeight)
+
+console.log("Расстояние от левой границы элемента до внутренностей: ", box1.clientLeft)
+console.log("Тоже самое но сверху",box1.clientTop)
+
+console.log("Ширина без учёта рамки и скроллбара:", box1.clientWidth)
+console.log("Высота того же самого:", box1.clientHeight)
+
+const p = document.querySelector('.pr')
+
+console.log(p.scrollWidth)
+console.log(p.scrollHeight)
+
+//p.scroll(0,100)
+p.scrollTop = 100
+
+console.log("Высота уже прокрученной области: ",p.scrollTop)
+
+console.log("Предоставление актуальных координат элемента относительно окна браузера ",box1.getBoundingClientRect())
+
+console.log("Координаты скролла страницы: ", window.scrollX, window.scrollY)
+
+const html = document.documentElement
+const body = document.body
+
+console.log("Ширина окна ",html.clientWidth)
+console.log("Высота окна",html.clientHeight)
+
+console.log(window.innerWidth) //Не будет учитывать размер скроллбара
+
+console.log("Высота страницы",html.scrollHeight) //Иногда работает криво
+console.log("Ширина страницы",html.scrollWidth)
+
+const normPageHeight = Math.max(
+  html.clientHeight,html.offsetHeight,html.scrollHeight,
+  body.clientHeight,body.offsetHeight,body.scrollHeight
+)
+
+console.log(normPageHeight)
+
+// setTimeout(() => {
+//   window.scroll({
+//     top: 100,
+//     behavior: "smooth"
+//   })
+// }, 2000)
+
+// setTimeout(() => {
+//   window.scrollBy({
+//     top: 1000,
+//     behavior: "smooth"
+//   })
+// }, 4000)
+
+setTimeout(() => {
+  box1.scrollIntoView({
+    behavior: "smooth"
+  })
+}, 2000)
