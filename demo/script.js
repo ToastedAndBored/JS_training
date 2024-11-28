@@ -567,102 +567,102 @@ wait(5000, () => {console.log(3)})
 // console.log(detDiv.nextElementSibling)
 // console.log(detDiv.childNodes)
 
-const but = document.getElementById("button")
+//const but = document.getElementById("button")
 
-console.log(but)
+//console.log(but)
 
-const box = document.querySelector(".box1")
-console.log(box)
+//const box = document.querySelector(".box1")
+//console.log(box)
 
-const boxList = document.querySelectorAll(".box1, .box2, .box3")
-console.log(boxList)
+//const boxList = document.querySelectorAll(".box1, .box2, .box3")
+//console.log(boxList)
 
-console.log(document.querySelector('.box3').closest('.box1'))
+//console.log(document.querySelector('.box3').closest('.box1'))
 
-// console.dir(but)
+//// console.dir(but)
 
-console.log(but.getAttribute("id"))
+//console.log(but.getAttribute("id"))
 
-but.setAttribute("cfghjv","1")
+//but.setAttribute("cfghjv","1")
 
-console.log(but.getAttribute("cfghjv"))
+//console.log(but.getAttribute("cfghjv"))
 
-but.removeAttribute('cfghjv')
+//but.removeAttribute('cfghjv')
 
-console.log(but.hasAttribute('cfghjv'))
+//console.log(but.hasAttribute('cfghjv'))
 
-const choJS = document.querySelector('[data-js-cho]')
-console.log(choJS)
+//const choJS = document.querySelector('[data-js-cho]')
+//console.log(choJS)
 
-const choParse = JSON.parse(
-  choJS.getAttribute("data-js-cho")
-)
-console.log(choParse)
+//const choParse = JSON.parse(
+//  choJS.getAttribute("data-js-cho")
+//)
+//console.log(choParse)
 
-console.log(but.style)
+//console.log(but.style)
 
-const box1 = document.querySelector('.box1')
+//const box1 = document.querySelector('.box1')
 
-box1.style.cssText += `
-  height: 40px;
-  width: 40px;
-  border: 40px solid blue;
-`
+//box1.style.cssText += `
+//  height: 40px;
+//  width: 40px;
+//  border: 40px solid blue;
+//`
 
-console.log(getComputedStyle(box1).width)
-console.log(getComputedStyle(box1,'::after').content)
+//console.log(getComputedStyle(box1).width)
+//console.log(getComputedStyle(box1,'::after').content)
 
-box1.classList.add('dcfvghj')
-box1.classList.remove('dcfvghj')
+//box1.classList.add('dcfvghj')
+//box1.classList.remove('dcfvghj')
 
-const tru = true
+//const tru = true
 
-box1.classList.toggle('red', tru)
+//box1.classList.toggle('red', tru)
 
-console.log(box1.classList.contains('red'))
+//console.log(box1.classList.contains('red'))
 
-box1.style.setProperty('--aaaa', 'green')
+//box1.style.setProperty('--aaaa', 'green')
 
-console.log(box1.offsetWidth)
-console.log(box1.offsetHeight)
+//console.log(box1.offsetWidth)
+//console.log(box1.offsetHeight)
 
-console.log("Расстояние от левой границы элемента до внутренностей: ", box1.clientLeft)
-console.log("Тоже самое но сверху",box1.clientTop)
+//console.log("Расстояние от левой границы элемента до внутренностей: ", box1.clientLeft)
+//console.log("Тоже самое но сверху",box1.clientTop)
 
-console.log("Ширина без учёта рамки и скроллбара:", box1.clientWidth)
-console.log("Высота того же самого:", box1.clientHeight)
+//console.log("Ширина без учёта рамки и скроллбара:", box1.clientWidth)
+//console.log("Высота того же самого:", box1.clientHeight)
 
-const p = document.querySelector('.pr')
+//const p = document.querySelector('.pr')
 
-console.log(p.scrollWidth)
-console.log(p.scrollHeight)
+//console.log(p.scrollWidth)
+//console.log(p.scrollHeight)
 
-//p.scroll(0,100)
-p.scrollTop = 100
+////p.scroll(0,100)
+//p.scrollTop = 100
 
-console.log("Высота уже прокрученной области: ",p.scrollTop)
+//console.log("Высота уже прокрученной области: ",p.scrollTop)
 
-console.log("Предоставление актуальных координат элемента относительно окна браузера ",box1.getBoundingClientRect())
+//console.log("Предоставление актуальных координат элемента относительно окна браузера ",box1.getBoundingClientRect())
 
-console.log("Координаты скролла страницы: ", window.scrollX, window.scrollY)
+//console.log("Координаты скролла страницы: ", window.scrollX, window.scrollY)
 
-const html = document.documentElement
-const body = document.body
+//const html = document.documentElement
+//const body = document.body
 
-console.log("Ширина окна ",html.clientWidth)
-console.log("Высота окна",html.clientHeight)
+//console.log("Ширина окна ",html.clientWidth)
+//console.log("Высота окна",html.clientHeight)
 
-console.log(window.innerWidth) //Не будет учитывать размер скроллбара
+//console.log(window.innerWidth) //Не будет учитывать размер скроллбара
 
-console.log("Высота страницы",html.scrollHeight) //Иногда работает криво
-console.log("Ширина страницы",html.scrollWidth)
+//console.log("Высота страницы",html.scrollHeight) //Иногда работает криво
+//console.log("Ширина страницы",html.scrollWidth)
 
-const normPageHeight = Math.max(
-  html.clientHeight,html.offsetHeight,html.scrollHeight,
-  body.clientHeight,body.offsetHeight,body.scrollHeight
-)
+//const normPageHeight = Math.max(
+//  html.clientHeight,html.offsetHeight,html.scrollHeight,
+//  body.clientHeight,body.offsetHeight,body.scrollHeight
+//)
 
-console.log(normPageHeight)
+//console.log(normPageHeight)
 
 // setTimeout(() => {
 //   window.scroll({
@@ -678,68 +678,108 @@ console.log(normPageHeight)
 //   })
 // }, 4000)
 
-setTimeout(() => {
-  box1.scrollIntoView({
-    behavior: "smooth"
-  })
-}, 2000)
+//setTimeout(() => {
+//  box1.scrollIntoView({
+//    behavior: "smooth"
+//  })
+//}, 2000)
 
-const boxElement = document.querySelector('.box')
+//const boxElement = document.querySelector('.box')
 
-const p1 = document.querySelector('.p1')
-p1.textContent += 'fwfgfs'
+//const p1 = document.querySelector('.p1')
+//p1.textContent += 'fwfgfs'
 
-console.log(boxElement.textContent)
+//console.log(boxElement.textContent)
 
-boxElement.innerHTML += ` 
-  xcvgbhnjk
-  <p>afdsffa</p>
-`
+//boxElement.innerHTML += ` 
+//  xcvgbhnjk
+//  <p>afdsffa</p>
+//`
 
-console.log(boxElement.innerHTML)
+//console.log(boxElement.innerHTML)
 
-console.log(boxElement.outerHTML)
+//console.log(boxElement.outerHTML)
 
-const p4 = document.createElement('p')
+//const p4 = document.createElement('p')
 
-p4.textContent = "Forth one"
-p4.classList.add('p4')
+//p4.textContent = "Forth one"
+//p4.classList.add('p4')
 
-boxElement.append(p4)
-boxElement.prepend(p4)
+//boxElement.append(p4)
+//boxElement.prepend(p4)
 
-boxElement.before(p4)
-boxElement.after(p4)
+//boxElement.before(p4)
+//boxElement.after(p4)
 
-p.replaceWith(p4) //Каждая следующая инструкция перемещала p4 по DOM-дереву на странице
-                  //а не создавала новые элементы по запросу
-//А вот функция ниже из-за того что постоянно создаёт новый элемент такой проблемы не имеет
-const getNewP = (cl) =>{
-  const newP = document.createElement('p')
+//p.replaceWith(p4) //Каждая следующая инструкция перемещала p4 по DOM-дереву на странице
+//                  //а не создавала новые элементы по запросу
+////А вот функция ниже из-за того что постоянно создаёт новый элемент такой проблемы не имеет
+//const getNewP = (cl) =>{
+//  const newP = document.createElement('p')
   
-  newP.classList.add(`${cl}`)
+//  newP.classList.add(`${cl}`)
 
-  newP.textContent = "Что бы то ни было"
+//  newP.textContent = "Что бы то ни было"
 
-  return newP
+//  return newP
+//}
+
+//boxElement.append(getNewP('first'))
+//boxElement.prepend(getNewP('second'))
+////В аргументы этих методы можно добавлять несколько элементов 
+
+//const newTag = '<p>SMTH</p>'
+
+//boxElement.insertAdjacentHTML('afterbegin', newTag)//Вставка строк с разметкой
+//                                                   //лучше погуглить методы
+
+//p.remove()
+
+//const boxClone = boxElement.cloneNode(true)
+
+//boxElement.after(boxClone)
+
+const but = document.querySelector('#button')
+const but2 = document.querySelector('#button2')
+
+const log = () => {
+  console.log('dfghjkl;')
 }
 
-boxElement.append(getNewP('first'))
-boxElement.prepend(getNewP('second'))
-//В аргументы этих методы можно добавлять несколько элементов 
 
-const newTag = '<p>SMTH</p>'
+but.addEventListener('click',log)
 
-boxElement.insertAdjacentHTML('afterbegin', newTag)//Вставка строк с разметкой
-                                                   //лучше погуглить методы
+but.addEventListener('click',() => {
+  console.log('2')
+})
 
-p.remove()
+but2.addEventListener('click', () => {
+  but.removeEventListener('click', log)
+})
 
-const boxClone = boxElement.cloneNode(true)
+but2.addEventListener('click', (event) => {
+  console.log(event)
+})
 
-boxElement.after(boxClone)
+const box1 = document.querySelector(".BOX1")
+const box2 = document.querySelector(".BOX2")
 
+// box1.addEventListener('click', (event) =>{
+//   console.log(event.target)
+//   console.log(event.currentTarget)
+// })
 
+const logThis = (event) => {
+  console.log(event.target)
+}
 
+box1.addEventListener('click', logThis)
 
+box2.addEventListener('click', (event) => {
+  console.log(event.target)
+  event.stopPropagation() // Эта функция нужна чтобы о событии не узнали родительские элементы
+  event.stopImmediatePropagation() // А эта функция не только не даёт знать родительским
+  //                                     элементам об ивенте но ещё и останавливает все
+  //                                     другие ивенты у данного элемента 
+})
 
